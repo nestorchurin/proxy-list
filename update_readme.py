@@ -31,13 +31,6 @@ Contains **HTTP**, **SOCKS4**, and **SOCKS5** proxies.
 | **SOCKS4** | {active_socks4} | {clean_socks4} | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
 | **SOCKS5** | {active_socks5} | {clean_socks5} | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |
 
-## 🚀 Usage
-
-### Raw Links (Active Proxies)
-- **HTTP**: `https://raw.githubusercontent.com/nestorchurin/proxy-list/main/proxies/active/http.txt`
-- **SOCKS4**: `https://raw.githubusercontent.com/nestorchurin/proxy-list/main/proxies/active/socks4.txt`
-- **SOCKS5**: `https://raw.githubusercontent.com/nestorchurin/proxy-list/main/proxies/active/socks5.txt`
-
 ## 🛠 How it works
 This repository uses a Python script to:
 1. Scrape free proxies from multiple public sources.
