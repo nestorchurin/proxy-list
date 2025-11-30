@@ -1,0 +1,7 @@
+http://api.proxyscrape.com/v4/free-proxy-list/get?request=get_proxies&protocol=socks4&proxy_format=ipport&format=text&timeout=20000
+http://api.proxyscrape.com/v4/free-proxy-list/get?request=get_proxies&protocol=socks5&proxy_format=ipport&format=text&timeout=20000
+http://api.proxyscrape.com/v4/free-proxy-list/get?request=get_proxies&protocol=http&proxy_format=ipport&format=text&timeout=20000
+https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc #Треба гортати сторінки доки, поки не закінчаться і сортувати
+https://proxydb.net/ # Треба парсити щоб завантажити усі проксі
+https://nodemaven.com/wp-json/proxy-list/v1/proxies?page=1&per_page=2836&country=&protocol=&type=&latency= # Треба розібратися як його вивантажити
+https://roundproxies.com/api/get-free-proxies/?limit=500&page=1&sort_by=lastChecked&sort_type=desc #Треба гортати сторінки доки, поки не закінчаться і сортувати
