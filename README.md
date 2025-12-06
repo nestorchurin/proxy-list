@@ -10,9 +10,9 @@ Contains **HTTP**, **SOCKS4**, and **SOCKS5** proxies.
 
 | Protocol | Active (Live) | Unique (Total) | Download Active | Download Unique |
 |----------|---------------|----------------|-----------------|-----------------|
-| **HTTP** | 23 | 2534 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
-| **SOCKS4** | 39 | 3873 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
-| **SOCKS5** | 2 | 634 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |python auto_run.pypython auto_run.py
+| **HTTP** | 24 | 3118 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
+| **SOCKS4** | 111 | 3337 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
+| **SOCKS5** | 1 | 521 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |python auto_run.pypython auto_run.py
 
 ## 🛠 How it works
 This repository uses a Python script to:
