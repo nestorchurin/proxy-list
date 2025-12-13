@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+proxies.zip
+proxies.txt
+
+
+
+
+# Ignore raw proxy sources, keep only processed
+proxies/*
+!proxies/active/
+!proxies/clean/
