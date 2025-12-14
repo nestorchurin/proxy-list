@@ -5,7 +5,7 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/nestorchurin/proxy-list/update_proxies.yml?label=Auto-Update)
 
 A fully automated, open-source repository providing fresh, checked, and deduplicated free proxies.
-Updated **every 6 hours** via GitHub Actions.
+Updated **every 1 hour** via GitHub Actions.
 
 ## 🎯 Who is this for?
 This project is designed for developers, researchers, and enthusiasts who need free proxies for:
