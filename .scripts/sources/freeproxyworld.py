@@ -8,9 +8,8 @@ class FreeProxyWorld(ProxySource):
         base_url = "https://www.freeproxy.world/"
         ua = UserAgent()
         page = 1
-        max_pages_to_scrape = 2000  # Increased limit to cover all pages (~1000+)
         
-        while page <= max_pages_to_scrape:
+        while True:
             url = f"{base_url}?page={page}"
             headers = {'User-Agent': ua.random}
             
