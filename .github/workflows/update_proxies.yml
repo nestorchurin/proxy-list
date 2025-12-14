@@ -42,4 +42,5 @@ jobs:
         git config --global user.email "pavlonimetrons@gmail.com"
         git add proxies/ README.md
         git commit -m "Auto-update proxy list [$(date)]" || exit 0
+        git pull --rebase --autostash
         git push
