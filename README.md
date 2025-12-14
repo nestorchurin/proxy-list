@@ -5,7 +5,7 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/nestorchurin/proxy-list/update_proxies.yml?label=Auto-Update)
 
 A fully automated, open-source repository providing fresh, checked, and deduplicated free proxies.
-Updated **every 1 hour** via GitHub Actions.
+Updated **every 6 hours** via GitHub Actions.
 
 ## 🎯 Who is this for?
 This project is designed for developers, researchers, and enthusiasts who need free proxies for:
@@ -20,9 +20,9 @@ This project is designed for developers, researchers, and enthusiasts who need f
 
 | Protocol | Active (Live) | Unique (Total) | Download Active | Download Unique |
 |----------|---------------|----------------|-----------------|-----------------|
-| **HTTP** | 32 | 2020 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
-| **SOCKS4** | 110 | 4363 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
-| **SOCKS5** | 1 | 654 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |
+| **HTTP** | 32 | 2023 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
+| **SOCKS4** | 110 | 4335 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
+| **SOCKS5** | 1 | 699 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |
 
 ## 🤝 How to Contribute
 We welcome contributions! If you know a good source of free proxies, you can add it to the scraper.
