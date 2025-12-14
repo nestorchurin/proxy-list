@@ -60,11 +60,12 @@ This project is designed for developers, researchers, and enthusiasts who need f
 ## 🤝 How to Contribute
 We welcome contributions! If you know a good source of free proxies, you can add it to the scraper.
 
+> **Important:** We accept direct sources (APIs, websites, HTML tables). We **do not** accept other GitHub repositories or aggregators that simply re-upload scraped lists. We want to fetch from the source, not from another scraper.
+
 ### Adding a New Proxy Source
-1.  **Fork the repository**.
-2.  Navigate to `.scripts/sources/`.
-3.  Create a new file (e.g., `mysource.py`).
-4.  Inherit from `ProxySource` and implement the `fetch()` method.
+1.  Navigate to `.scripts/sources/`.
+2.  Create a new file (e.g., `mysource.py`).
+3.  Inherit from `ProxySource` and implement the `fetch()` method.
 
 **Base Template (`base.py`):**
 ```python
@@ -76,8 +77,8 @@ We welcome contributions! If you know a good source of free proxies, you can add
 {example_source}
 ```
 
-5.  Register your new source in `.scripts/proxy_manager.py` (it's auto-discovered!).
-6.  Submit a **Pull Request**!
+4.  Register your new source in `.scripts/proxy_manager.py` (it's auto-discovered!).
+5.  Submit a **Pull Request**!
 
 ## 🛠 How it works
 1.  **Fetch**: Scripts in `.scripts/sources/` scrape proxies from various public APIs and websites.
