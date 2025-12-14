@@ -6,9 +6,8 @@ class RoundProxies(ProxySource):
         url = "https://roundproxies.com/api/get-free-proxies/"
         limit = 500
         page = 1
-        max_pages = 10
         
-        while page <= max_pages:
+        while True:
             params = {
                 "limit": limit,
                 "page": page,
@@ -17,6 +16,7 @@ class RoundProxies(ProxySource):
             }
             
             try:
+                print(f"  Fetching RoundProxies page {page}...")
                 resp = requests.get(url, params=params, timeout=20)
                 data = resp.json()
                 items = data.get('data', [])

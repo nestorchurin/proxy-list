@@ -5,15 +5,15 @@ class NodeMaven(ProxySource):
     def fetch(self):
         url = "https://nodemaven.com/wp-json/proxy-list/v1/proxies"
         page = 1
-        max_pages = 5
         
-        while page <= max_pages:
+        while True:
             params = {
                 "page": page,
                 "per_page": 500
             }
             
             try:
+                print(f"  Fetching NodeMaven page {page}...")
                 resp = requests.get(url, params=params, timeout=20)
                 data = resp.json()
                 items = data.get('data', [])

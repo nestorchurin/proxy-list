@@ -6,9 +6,8 @@ class GeoNode(ProxySource):
         url = "https://proxylist.geonode.com/api/proxy-list"
         limit = 500
         page = 1
-        max_pages = 10
         
-        while page <= max_pages:
+        while True:
             params = {
                 "limit": limit,
                 "page": page,
@@ -17,6 +16,7 @@ class GeoNode(ProxySource):
             }
             
             try:
+                print(f"  Fetching GeoNode page {page}...")
                 resp = requests.get(url, params=params, timeout=20)
                 data = resp.json()
                 items = data.get('data', [])

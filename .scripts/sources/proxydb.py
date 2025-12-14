@@ -8,14 +8,14 @@ class ProxyDB(ProxySource):
         url_base = "https://proxydb.net/"
         offset = 0
         step = 15
-        limit = 200
         ua = UserAgent()
         
-        while offset <= limit:
+        while True:
             params = {"offset": offset}
             headers = {'User-Agent': ua.random}
             
             try:
+                print(f"  Fetching ProxyDB offset {offset}...")
                 resp = requests.get(url_base, params=params, headers=headers, timeout=20)
                 soup = BeautifulSoup(resp.text, 'html.parser')
                 
