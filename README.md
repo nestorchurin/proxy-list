@@ -20,18 +20,19 @@ This project is designed for developers, researchers, and enthusiasts who need f
 
 | Protocol | Active (Live) | Unique (Total) | Download Active | Download Unique |
 |----------|---------------|----------------|-----------------|-----------------|
-| **HTTP** | 32 | 2023 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
-| **SOCKS4** | 110 | 4335 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
-| **SOCKS5** | 1 | 699 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |
+| **HTTP** | 26 | 2030 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
+| **SOCKS4** | 110 | 6539 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
+| **SOCKS5** | 1 | 1076 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |
 
 ## 🤝 How to Contribute
 We welcome contributions! If you know a good source of free proxies, you can add it to the scraper.
 
+> **Important:** We accept direct sources (APIs, websites, HTML tables). We **do not** accept other GitHub repositories or aggregators that simply re-upload scraped lists. We want to fetch from the source, not from another scraper.
+
 ### Adding a New Proxy Source
-1.  **Fork the repository**.
-2.  Navigate to `.scripts/sources/`.
-3.  Create a new file (e.g., `mysource.py`).
-4.  Inherit from `ProxySource` and implement the `fetch()` method.
+1.  Navigate to `.scripts/sources/`.
+2.  Create a new file (e.g., `mysource.py`).
+3.  Inherit from `ProxySource` and implement the `fetch()` method.
 
 **Base Template (`base.py`):**
 ```python
@@ -83,8 +84,8 @@ class ProxyScrape(ProxySource):
         return self.proxies
 ```
 
-5.  Register your new source in `.scripts/proxy_manager.py` (it's auto-discovered!).
-6.  Submit a **Pull Request**!
+4.  Register your new source in `.scripts/proxy_manager.py` (it's auto-discovered!).
+5.  Submit a **Pull Request**!
 
 ## 🛠 How it works
 1.  **Fetch**: Scripts in `.scripts/sources/` scrape proxies from various public APIs and websites.
