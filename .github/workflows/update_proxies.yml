@@ -27,10 +27,14 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
     - name: Run Proxy Manager
-      run: python proxy_manager.py
+      run: |
+        cd .scripts
+        python proxy_manager.py
       
     - name: Update README stats
-      run: python update_readme.py
+      run: |
+        cd .scripts
+        python update_readme.py
       
     - name: Commit and Push changes
       run: |
