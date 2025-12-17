@@ -20,9 +20,9 @@ This project is designed for developers, researchers, and enthusiasts who need f
 
 | Protocol | Active (Live) | Unique (Total) | Download Active | Download Unique |
 |----------|---------------|----------------|-----------------|-----------------|
-| **HTTP** | 37 | 3525 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
-| **SOCKS4** | 110 | 6821 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
-| **SOCKS5** | 1 | 1337 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |
+| **HTTP** | 43 | 3737 | [📥 Download](proxies/active/http.txt) | [📥 Download](proxies/clean/http.txt) |
+| **SOCKS4** | 110 | 6832 | [📥 Download](proxies/active/socks4.txt) | [📥 Download](proxies/clean/socks4.txt) |
+| **SOCKS5** | 1 | 1349 | [📥 Download](proxies/active/socks5.txt) | [📥 Download](proxies/clean/socks5.txt) |
 
 ## 🤝 How to Contribute
 We welcome contributions! If you know a good source of free proxies, you can add it to the scraper.
