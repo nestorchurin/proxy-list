@@ -2,45 +2,50 @@ name: Update Proxy List
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Runs every 6 hours
-  workflow_dispatch: # Allows manual trigger
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   update-proxies:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.12'
-        
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        
-    - name: Run Proxy Manager
-      run: |
-        cd .scripts
-        python proxy_manager.py
-      
-    - name: Update README stats
-      run: |
-        cd .scripts
-        python update_readme.py
-      
-    - name: Commit and Push changes
-      run: |
-        git config --global user.name "nestorchurin"
-        git config --global user.email "pavlonimetrons@gmail.com"
-        git add proxies/ README.md
-        git commit -m "Auto-update proxy list [$(date)]" || exit 0
-        git pull --rebase --autostash
-        git push
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run Proxy Manager
+        run: |
+          cd .scripts
+          python proxy_manager.py
+
+      - name: Generate README stats (NO COMMIT)
+        run: |
+          cd .scripts
+          python update_readme.py
+
+      - name: Upload proxy list artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: proxy-list
+          path: proxies/
+
+      - name: Upload README preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: readme-preview
+          path: README.md
